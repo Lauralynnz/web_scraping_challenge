@@ -35,7 +35,7 @@ def mars_news(browser):
     # type(soup)
 
     # Assign news_title and news_paragraph variables to reference later 
-    news_title = soup.find('div', class_='content_title').find('a').text
+    news_title = soup.find('div', class_='content_title').text
     news_p = soup.find('div', class_='article_teaser_body').text
     
     # Print featured_image_url link
